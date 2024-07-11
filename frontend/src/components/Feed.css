@@ -1,0 +1,84 @@
+.feed-content {
+    margin-left: 280px;
+    padding: 80px 20px 20px;
+  }
+  
+  .recentcontainer {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newpostheader,
+  .newpostfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .newpostheader a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1c1e21;
+  }
+  
+  .newpostheader a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .newpostheader .name {
+    font-weight: bold;
+  }
+  
+  .newpostheader span {
+    margin-left: 5px;
+  }
+  
+  .timelocation {
+    font-size: 12px;
+    color: #606770;
+  }
+  
+  .newpost textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    background: #f5f6f7;
+  }
+  
+  .newpostfooter {
+    margin-top: 10px;
+  }
+  
+  .newpostfooter a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #606770;
+    padding: 5px 0;
+  }
+  
+  .newpostfooter a .fa {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .postcontent p {
+    margin: 0;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
