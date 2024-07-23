@@ -1,598 +1,127 @@
-/* Left Section */
-.main .left {
-    width: 280px;
-    height: 92vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    padding: 20px 6px 5px 10px;
-    position: fixed;
-  }
-  
-  .main .left::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .main .left::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background: #f0f2f5;
-  }
-  
-  .main .left:hover::-webkit-scrollbar-thumb {
-    background: #bfbfbf;
-  }
-  
-  .main .left a {
-    text-decoration: none;
-    color: #4d4d4d;
-  }
-  
-  .main .left .img .see, .main .left .shortcuts .see {
-    color: #4d4d4d;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  
-  .main .left a .img p, .main .left a .shortcuts p {
-    font-size: 15px;
-    font-weight: 600;
-  }
-  
-  .main .left a .img, .main .left .img {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.2s;
-    border-radius: 6px;
-    padding-left: 7px;
-  }
-  
-  .main .left a .img:hover, .main .left .img:hover {
-    background: #e3e3e3;
-  }
-  
-  .main .left a .img img, .main .left .img img {
-    width: 29px;
-    height: 29px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    margin: 8px 15px 8px 0;
-  }
-  
-  .main .left hr, .main .right hr {
-    width: 100%;
-    height: 1px;
-    border: 0;
-    background: #cccccc;
-    margin: 10px 0;
-  }
-  
-  .main .left h2 {
-    font-size: 17px;
-    color: #919191;
-    margin: 5px 0;
-  }
-  
-  .main .left .edit {
-    color: #45abff;
-    font-size: 15px;
-    float: right;
-    position: relative;
-    bottom: 23px;
-    cursor: pointer;
-    opacity: 0;
-  }
-  
-  .main .left:hover .edit {
-    opacity: 1;
-  }
-  
-  .main .left a .shortcuts, .main .left .shortcuts {
-    display: flex;
-    align-items: center;
-    transition: 0.2s;
-    border-radius: 6px;
-    padding-left: 7px;
-  }
-  
-  .main .left a .shortcuts:hover, .main .left .shortcuts:hover {
-    background: #e3e3e3;
-    cursor: pointer;
-  }
-  
-  .main .left a .shortcuts img, .main .left .shortcuts img {
-    width: 29px;
-    height: 29px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5px;
-    margin: 8px 15px 8px 0;
-  }
-  
-  /* Center Section */
-  .main .center {
-    width: 560px;
-    height: auto;
-    padding: 20px 20px 0 20px;
-    margin-left: 25%;
-  }
-  
-  .main .center .top_box {
-    width: 100%;
-    height: 260px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  
-  .main .center .top_box .my_story_card {
-    width: 125px;
-    height: 250px;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .main .center .top_box .my_story_card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .main .center .top_box .my_story_card .story_upload {
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    position: relative;
-    bottom: 50px;
-    cursor: pointer;
-  }
-  
-  .main .center .top_box .my_story_card .story_upload img {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    bottom: 15px;
-    border-radius: 50%;
-  }
-  
-  .main .center .top_box .my_story_card .story_upload .story_tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .main .center .top_box .story_card {
-    width: 125px;
-    height: 250px;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 9px;
-  }
-  
-  .main .center .top_box .story_card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .main .center .top_box .story_card .story_profile {
-    position: relative;
-    bottom: 240px;
-    margin-left: 10px;
-    border-radius: 50%;
-    border: 2px solid #0477ff;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .main .center .top_box .story_card .story_profile img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-  
-  .main .center .top_box .story_card .story_user {
-    position: relative;
-    bottom: 60px;
-    text-align: center;
-    color: white;
-  }
-  
-  .main .center .top_box .story_card .story_user h4 {
-    font-size: 14px;
-    font-weight: normal;
-  }
-  
-  /* Post Section */
-  .main .center .post {
-    width: 100%;
-    height: 125px;
-    margin-top: 10px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    background: white;
-  }
-  
-  .main .center .post a {
-    text-decoration: none;
-  }
-  
-  .main .center .post a:hover .search_post {
-    background-color: #f2f2f2;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .main .center .post .search_post {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-  }
-  
-  .main .center .post .search_post img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-  }
-  
-  .main .center .post .search_post .search_user {
-    font-size: 15px;
-    color: #8d8d8d;
-    margin-left: 10px;
-    padding-left: 10px;
-    border-left: 1px solid #c7c7c7;
-  }
-  
-  .main .center .post hr {
-    width: 100%;
-    height: 1px;
-    background: #f0f0f0;
-    border: 0;
-  }
-  
-  .main .center .post .options {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .main .center .post .options .option {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #6c6c6c;
-    cursor: pointer;
-  }
-  
-  .main .center .post .options .option:hover {
-    background: #f2f2f2;
-    transition: 0.3s;
-  }
-  
-  .main .center .post .options .option .icon i {
-    font-size: 19px;
-  }
-  
-  .main .center .post .options .option .icon:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .main .center .post .options .option p {
-    margin-left: 5px;
-  }
-  
-  /* Post Section Styles */
-  .main .center .posts {
-    width: 100%;
-    height: auto;
-  }
-  
-  .main .center .posts .post_box {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    padding: 0 15px 10px 15px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    border-radius: 7px;
-  }
-  
-  .main .center .posts .post_box .post_header {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .main .center .posts .post_box .post_header .user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .main .center .posts .post_box .post_header .user .profile img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-  }
-  
-  .main .center .posts .post_box .post_header .user .details h4 {
-    font-size: 17px;
-  }
-  
-  .main .center .posts .post_box .post_header .user .details p {
-    color: #959595;
-    font-size: 12px;
-  }
-  
-  .main .center .posts .post_box .post_header .user .details p span {
-    font-size: 17px;
-    margin-left: 2px;
-  }
-  
-  .main .center .posts .post_box .post_header .user .details .more {
-    position: relative;
-    right: 7px;
-    color: #959595;
-    cursor: pointer;
-  }
-  
-  .main .center .posts .post_box .post_header .user .details .more:hover {
-    background: #f2f2f2;
-    border-radius: 50%;
-  }
-  
-  .main .center .posts .post_box .post_content {
-    width: 100%;
-    height: auto;
-  }
-  
-  .main .center .posts .post_box .post_content p {
-    font-size: 15px;
-    font-weight: 500;
-    padding: 0 15px 5px 15px;
-  }
-  
-  .main .center .posts .post_box .post_content img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  /* Reaction Section */
-  .main .center .posts .post_box .reaction {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
-  
-  .main .center .posts .post_box .reaction .reaction_count {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: #959595;
-  }
-  
-  .main .center .posts .post_box .reaction .reaction_count img {
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .main .center .posts .post_box .reaction .comment_share_count {
-    color: #959595;
-  }
-  
-  /* Post Footer */
-  .main .center .posts .post_box .post_footer {
-    width: 100%;
-    height: 40px;
-    border-top: 1px solid #ebebeb;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15px;
-    margin-top: 10px;
-  }
-  
-  .main .center .posts .post_box .post_footer .post_footer_option {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #6c6c6c;
-    cursor: pointer;
-  }
-  
-  .main .center .posts .post_box .post_footer .post_footer_option:hover {
-    background: #f2f2f2;
-    transition: 0.3s;
-  }
-  
-  .main .center .posts .post_box .post_footer .post_footer_option .icon i {
-    font-size: 20px;
-  }
-  
-  .main .center .posts .post_box .post_footer .post_footer_option p {
-    margin-left: 5px;
-  }
-  
-  /* Comment Section */
-  .main .center .posts .post_box .comment_box {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px 10px 15px;
-  }
-  
-  .main .center .posts .post_box .comment_box img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }
-  
-  .main .center .posts .post_box .comment_box .search_comment {
-    width: 92%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    background: #f0f2f5;
-    border-radius: 20px;
-    margin-left: 10px;
-    padding-left: 13px;
-  }
-  
-  .main .center .posts .post_box .comment_box .search_comment input {
-    height: 85%;
-    outline: none;
-    border: none;
-    margin-left: 8px;
-    background: transparent;
-  }
-  
-  /* Right Section */
-  .main .right {
-    width: 320px;
-    height: 92vh;
-    padding: 20px 8px 5px 5px;
-    position: relative;
-    right: 0;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-  
-  .main .right::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .main .right::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background: #f0f2f5;
-  }
-  
-  .main .right:hover::-webkit-scrollbar-thumb {
-    background: #bfbfbf;
-  }
-  
-  .main .right .birthday, .main .right .pages, .main .right .contacts {
-    width: 100%;
-    height: auto;
-  }
-  
-  .main .right .birthday .img, .main .right .pages .img, .main .right .contacts .img {
-    display: flex;
-    align-items: center;
-    padding: 3px 3px 10px 3px;
-  }
-  
-  .main .right .birthday .img:hover, .main .right .pages .img:hover, .main .right .contacts .img:hover {
-    background: #f2f2f2;
-    border-radius: 6px;
-  }
-  
-  .main .right .birthday .img .icon, .main .right .pages .img .icon, .main .right .contacts .img .icon {
-    font-size: 32px;
-    color: #f68232;
-  }
-  
-  .main .right .birthday .img h3, .main .right .pages .img h3, .main .right .contacts .img h3 {
-    font-size: 17px;
-    font-weight: 500;
-    margin-left: 5px;
-  }
-  
-  .main .right .birthday .img p, .main .right .pages .img p, .main .right .contacts .img p {
-    font-size: 15px;
-    font-weight: 400;
-    color: #6e6e6e;
-    margin-left: 10px;
-  }
-  
-  .main .right .birthday .img p a, .main .right .pages .img p a, .main .right .contacts .img p a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .main .right .pages .heading, .main .right .contacts .heading {
-    padding: 10px 0 0 3px;
-  }
-  
-  .main .right .pages .heading h4, .main .right .contacts .heading h4 {
-    color: #959595;
-  }
-  
-  .main .right .pages .list, .main .right .contacts .list {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  
-  .main .right .pages .list:hover, .main .right .contacts .list:hover {
-    background: #f2f2f2;
-  }
-  
-  .main .right .pages .list img, .main .right .contacts .list img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .main .right .pages .list .page {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main .right .pages .list .page h3, .main .right .contacts .list .page h3 {
-    font-size: 15px;
-  }
-  
-  .main .right .pages .list .page p, .main .right .contacts .list .page p {
-    font-size: 13px;
-    font-weight: 400;
-    color: #6e6e6e;
-    display: flex;
-    align-items: center;
-  }
-  
-  .main .right .pages .list .page p .icon, .main .right .contacts .list .page p .icon {
-    font-size: 14px;
-    color: #0477ff;
-    margin-right: 3px;
-  }
-  
+
+
+.main > .left {
+  width: 280px;
+  height: 92vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 20px 6px 5px 10px;
+  position: fixed;
+}
+
+.main .left::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main .left::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #f0f2f5;
+}
+
+.main .left:hover::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+}
+
+.main > .left > a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.main > .left > .img > .see,
+.main > .left > .shortcuts > .see {
+  color: #4d4d4d;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main > .left > a > .img > p,
+.main > .left > a > .shortcuts > p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main > .left > a > .img,
+.main > .left > .img {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 6px;
+  padding-left: 7px;
+}
+
+.main > .left > a > .img:hover {
+  background: #e3e3e3;
+}
+
+.main > .left > .img:hover {
+  background-color: #e3e3e3;
+}
+
+.main > .left > a > .img > img,
+.main > .left > .img > img {
+  width: 29px;
+  height: 29px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 8px 15px 8px 0;
+}
+
+.main > .left > hr,
+.main > .right > hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #cccccc;
+  margin: 10px 0;
+}
+
+.main > .left > h2 {
+  font-size: 17px;
+  color: #919191;
+  margin: 5px 0;
+}
+
+.main > .left > .edit {
+  color: #45abff;
+  font-size: 15px;
+  float: right;
+  position: relative;
+  bottom: 23px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.main > .left:hover .edit {
+  opacity: 1;
+}
+
+.main > .left > a > .shortcuts,
+.main > .left > .shortcuts {
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 6px;
+  padding-left: 7px;
+}
+
+.main > .left > a > .shortcuts:hover {
+  background: #e3e3e3;
+  cursor: pointer;
+}
+
+.main > .left > .shortcuts:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.main > .left > a > .shortcuts > img,
+.main > .left > .shortcuts > img {
+  width: 29px;
+  height: 29px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  margin: 8px 15px 8px 0;
+}

@@ -1,0 +1,181 @@
+
+  
+  /* Main Content */
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /* Right Section */
+  
+  .main > .right {
+    width: 310px;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 26px 6px 5px 10px;
+    position: fixed;
+    right: 0;
+  }
+  
+  .main .right::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .main .right::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #f0f2f5;
+  }
+  
+  .main .right:hover::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+  }
+  
+  .main > .right > .pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main > .right > .pages > h3 {
+    font-size: 16px;
+    color: #65676b;
+  }
+  
+  .main > .right > .pages > .menu {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .main > .right > .pages > .menu:hover {
+    background-color: #cccccc;
+    transition: 0.2s;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .main > .right > a > .member {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 0 10px;
+    gap: 11px;
+  }
+  
+  .main > .right > a > .margin,
+  .main > .left > .margin {
+    margin-bottom: 11px;
+  }
+  
+  .main > .right > a > .member:hover {
+    background-color: #dbdbdb;
+    transition: 0.2s;
+  }
+  
+  .main > .right > a > .member > .img {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main > .right > a > .member > .img > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .main > .right > h4 {
+    font-size: 16px;
+    color: #65676b;
+    margin-top: 18px;
+    margin-bottom: 14px;
+  }
+  
+  .main > .right > a > .member > .plus {
+    background-color: #bababa;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+  }
+  
+  .main > .right > a > .member > p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .main > .right > .switch {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #65676b;
+    padding: 0 24px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .main > .right > .switch:hover {
+    background-color: #dbdbdb;
+    transition: 0.2s;
+  }
+  
+  .main > .right > .switch > i {
+    font-size: 21px;
+  }
+  
+  .main > .right > .switch > p {
+    font-size: 13px;
+  }
+  
+  .main > .right > .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 10px;
+    margin-bottom: 8px;
+  }
+  
+  .main > .right > .contact > h3 {
+    font-size: 17px;
+    color: #65676b;
+  }
+  
+  .main > .right > .contact > .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main > .right > .contact > .right > .div {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #65676b;
+  }
+  
+  .main > .right > .contact > .right > .div:hover {
+    background-color: #dbdbdb;
+    transition: 0.2s;
+  }
+    
